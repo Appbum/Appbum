@@ -1,4 +1,4 @@
-package appbum.mobile.com.appbum.api;
+package appbum.mobile.com.appbum.api.config;
 
 
 import appbum.mobile.com.appbum.managers.preferences.PrefsManager;
@@ -9,7 +9,7 @@ public class ApiConfig {
     public static final String AUTHORIZATION = "authorization";
     public static final String PARAM_AUTHORIZATION = "auth";
 
-    public boolean DEBUG = true;
+    public boolean DEBUG = false;
 
     private PrefsManager prefsManager;
 

@@ -12,8 +12,9 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Named;
 import javax.inject.Singleton;
 
-import appbum.mobile.com.appbum.api.ApiConfig;
-import appbum.mobile.com.appbum.api.AuthenticatorService;
+import appbum.mobile.com.appbum.api.config.ApiConfig;
+import appbum.mobile.com.appbum.api.config.AuthenticatorService;
+import appbum.mobile.com.appbum.api.services.ApplicationApi;
 import appbum.mobile.com.appbum.managers.preferences.PrefsManager;
 import appbum.mobile.com.appbum.managers.preferences.ProjectPreferences;
 import dagger.Module;
@@ -30,6 +31,14 @@ import static android.net.sip.SipErrorCode.TIME_OUT;
 
 @Module
 public class ApiModule {
+
+    private final int TIME_OUT = 20;
+
+    @Provides
+    @Singleton
+    public ApplicationApi applicationApi(Retrofit retrofit) {
+        return retrofit.create(ApplicationApi.class);
+    }
 
     @Provides
     @Singleton

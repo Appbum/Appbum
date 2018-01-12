@@ -26,4 +26,12 @@ public class AppbumApplication extends Application {
                 .build();
     }
 
+    public AppComponent getAppComponent() {
+        return appComponent;
+    }
+
+    public static AppbumApplication get() {
+        return sInstance;
+    }
+
 }

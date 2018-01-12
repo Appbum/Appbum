@@ -2,13 +2,10 @@ package appbum.mobile.com.appbum.di.modules;
 
 import android.content.Context;
 
-import com.google.firebase.auth.FirebaseAuth;
-
 import javax.inject.Singleton;
 
 import appbum.mobile.com.appbum.ResourceProvider;
-import appbum.mobile.com.appbum.api.ApiConfig;
-import appbum.mobile.com.appbum.api.AuthenticatorService;
+import appbum.mobile.com.appbum.api.config.ApiConfig;
 import appbum.mobile.com.appbum.managers.events.RxBus;
 import appbum.mobile.com.appbum.managers.preferences.PrefsManager;
 import appbum.mobile.com.appbum.ui.AppbumApplication;

@@ -1,8 +1,9 @@
-package appbum.mobile.com.appbum.api
+package appbum.mobile.com.appbum.api.config
 
 import android.content.Context
 import android.content.Intent
 import appbum.mobile.com.appbum.managers.preferences.PrefsManager
+import appbum.mobile.com.appbum.ui.activities.LoginActivity
 import appbum.mobile.com.appbum.ui.activities.SplashActivity
 import com.google.firebase.auth.FirebaseAuth
 import okhttp3.Authenticator
@@ -22,7 +23,7 @@ class AuthenticatorService(private val context: Context, private val prefsManage
 
         firebaseAuth.signOut()
 
-        val intent = Intent(context, SplashActivity::class.java)
+        val intent = Intent(context, LoginActivity::class.java)
 
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
 
