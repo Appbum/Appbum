@@ -54,6 +54,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-auth:10.0.1'
     implementation 'com.google.firebase:firebase-storage:10.0.1'
+    implementation'com.google.firebase:firebase-messaging:10.0.1'
 
     //Rx
     implementation "com.jakewharton.rxbinding2:rxbinding:2.0.0"
